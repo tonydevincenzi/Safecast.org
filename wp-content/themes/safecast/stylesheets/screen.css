@@ -1,0 +1,256 @@
+/*   
+Theme Name: The HTML5 Reset Theme
+Theme URI: http://html5reset.org
+Description: A style-free theme to get you started on an 
+HTML5-based Wordpress theme of your own.
+Author: Monkey Do!
+Author URI: http://monkeydo.biz
+Version: 1
+*/
+/* line 17, ../../../../../../../.rvm/gems/ruby-1.9.3-p0-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../.rvm/gems/ruby-1.9.3-p0-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p0-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../.rvm/gems/ruby-1.9.3-p0-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../.rvm/gems/ruby-1.9.3-p0-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../.rvm/gems/ruby-1.9.3-p0-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../.rvm/gems/ruby-1.9.3-p0-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../.rvm/gems/ruby-1.9.3-p0-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../.rvm/gems/ruby-1.9.3-p0-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 33, ../sass/screen.scss */
+body {
+  font-family: helvetica;
+  font-size: 14px;
+}
+
+/* line 38, ../sass/screen.scss */
+a {
+  color: #5b5a5a;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+/* line 44, ../sass/screen.scss */
+#header {
+  background: #fff;
+  border-top: 10px solid black;
+  height: 93px;
+  -webkit-box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 51, ../sass/screen.scss */
+.header-contents {
+  margin: 0 auto;
+  width: 940px;
+  *zoom: 1;
+  position: relative;
+}
+/* line 17, ../sass/screen.scss */
+.header-contents:before, .header-contents:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../sass/screen.scss */
+.header-contents:after {
+  clear: both;
+}
+
+/* line 58, ../sass/screen.scss */
+.logo {
+  background: url("../images/logo.jpg") 100% no-repeat;
+  background-size: 100%;
+  display: block;
+  float: left;
+  height: 40px;
+  margin-top: 28px;
+  width: 310px;
+}
+
+/* line 68, ../sass/screen.scss */
+.menu-primary-container {
+  position: absolute;
+  width: 600px;
+  right: -109px;
+  top: 30px;
+}
+
+/* line 75, ../sass/screen.scss */
+#menu-primary {
+  right: 0;
+}
+/* line 77, ../sass/screen.scss */
+#menu-primary a {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  float: left;
+  font-size: 1.3em;
+  height: 20px;
+  padding: 10px 20px;
+  -webkit-transition: color 0.05s ease-in-out;
+  -webkit-transition-delay: 0;
+  -moz-transition: color 0.05s ease-in-out 0;
+  -o-transition: color 0.05s ease-in-out 0;
+  transition: color 0.05s ease-in-out 0;
+}
+/* line 85, ../sass/screen.scss */
+#menu-primary a:hover {
+  color: #68A4BD;
+}
+/* line 89, ../sass/screen.scss */
+#menu-primary li:first-child a {
+  border: none;
+}
+/* line 92, ../sass/screen.scss */
+#menu-primary .nav-help a {
+  color: #fff;
+  margin: 0 0 0 24px;
+  padding: 10px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3a3a3a), color-stop(100%, #181818));
+  background-image: -webkit-linear-gradient(top, #3a3a3a, #181818);
+  background-image: -moz-linear-gradient(top, #3a3a3a, #181818);
+  background-image: -o-linear-gradient(top, #3a3a3a, #181818);
+  background-image: linear-gradient(top, #3a3a3a, #181818);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 98, ../sass/screen.scss */
+#menu-primary .nav-help a:hover {
+  color: #bbb;
+}
+/* line 102, ../sass/screen.scss */
+#menu-primary .language a {
+  color: #DDDDDD;
+}
+
+/* line 107, ../sass/screen.scss */
+.slider-wrap {
+  background: url("../images/map-bg.jpg");
+  height: 440px;
+}
+
+/* line 112, ../sass/screen.scss */
+.safecast-introduction {
+  font-size: 1.9em;
+  line-height: 1.3em;
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 880px;
+}
+
+/* line 121, ../sass/screen.scss */
+#page-wrap {
+  margin: 20px auto;
+  width: 940px;
+}
+
+/* line 126, ../sass/screen.scss */
+.slide-item {
+  background: #fff;
+  height: 220px;
+  margin: 40px auto;
+  width: 940px;
+  -webkit-box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.25);
+}
+/* line 132, ../sass/screen.scss */
+.slide-item .slide-item-text {
+  float: left;
+  padding: 70px;
+  text-align: center;
+  width: 380px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 139, ../sass/screen.scss */
+.slide-item .slide-item-text h3 {
+  font-size: 2em;
+  font-weight: bold;
+}
+/* line 143, ../sass/screen.scss */
+.slide-item .slide-item-text p {
+  font-size: 1.5em;
+}
+/* line 147, ../sass/screen.scss */
+.slide-item img {
+  float: right;
+  height: 100%;
+  width: 560px;
+}
+
+/* line 155, ../sass/screen.scss */
+#footer {
+  background: #000;
+  bottom: 0;
+  height: 300px;
+}
+
+/* line 165, ../sass/screen.scss */
+.ir {
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
