@@ -43,5 +43,39 @@
     }
     
     add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
+    add_theme_support('post-thumbnails');
 
+    add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
+    add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
+
+    function remove_width_attribute( $html ) {
+       $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+       return $html;
+    }
+
+    function excerpt($limit) {
+          $excerpt = explode(' ', get_the_excerpt(), $limit);
+          if (count($excerpt)>=$limit) {
+            array_pop($excerpt);
+            $excerpt = implode(" ",$excerpt).'&hellip; <a href="'. get_permalink($post->ID) . '">' . 'more' . '</a>';
+          } else {
+            $excerpt = implode(" ",$excerpt);
+          } 
+          $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+          return $excerpt;
+        }
+
+        function content($limit) {
+          $content = explode(' ', get_the_content(), $limit);
+          if (count($content)>=$limit) {
+            array_pop($content);
+            $content = implode(" ",$content).'&hellip; <a href="'. get_permalink($post->ID) . '">' . 'more' . '</a>';
+          } else {
+            $content = implode(" ",$content);
+          } 
+          $content = preg_replace('/\[.+\]/','', $content);
+          $content = apply_filters('the_content', $content); 
+          $content = str_replace(']]>', ']]&gt;', $content);
+          return $content;
+        }
 ?>

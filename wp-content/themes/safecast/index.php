@@ -46,28 +46,21 @@ $(document).ready(function() {
   <div id="page-wrap">
     <?php if (have_posts()) : $i = 0; while (have_posts()) : the_post(); $i++; ?>
 
-      <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+      <article <?php post_class() ?> id="post-<?php the_ID(); ?>" >
+        <?php if($i == 1) the_post_thumbnail(); ?>
 
         <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-
-        
-        <?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
-
+        <?php if($i == 1) include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
         <div class="entry">
-          <?php
-          if($i == 1)
-          the_content('Read the rest of this entry &raquo;');
-          else
-          the_excerpt();
-          ?>
+          <p>
+            <?php 
+            if($i == 1)
+              echo excerpt(50); 
+            else 
+              echo excerpt(20);
+            ?>
+            </p>
         </div>
-        <!--
-        <footer class="postmetadata">
-          <?php the_tags('Tags: ', ', ', '<br />'); ?>
-          Posted in <?php the_category(', ') ?> | 
-          <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
-        </footer>
-        -->
       </article>
 
     <?php endwhile; ?>

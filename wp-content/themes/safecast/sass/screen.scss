@@ -29,6 +29,9 @@ Version: 1
 // BASE
 // ---------------------------------------------------------
 
+* {
+  @include box-sizing(border-box);
+}
 
 body {
   font-family: helvetica;
@@ -44,7 +47,7 @@ a {
 #header {
   background: #fff;
   border-top: 10px solid #000;
-  height: 93px;
+  height: 100px;
   @include box-shadow(0 -1px 6px 0 rgba(0,0,0,0.25));
 }
 
@@ -93,6 +96,7 @@ a {
     color: #fff;
     margin: 0 0 0 24px;
     padding: 10px;
+    height: 38px;
     @include background-image(linear-gradient(top, #3A3A3A, #181818));
     @include border-radius(4px);
     &:hover {
@@ -117,17 +121,114 @@ a {
   width: 880px;
 }
 
-
 #page-wrap {
   margin: 20px auto;
   width: 940px;
+  border: 1px solid #F5F5F5;
+  border-radius: 2px;
+  padding: 10px;
+  @include clearfix;
+
+  article:first-child {
+    float: left;
+    border: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    h2 {
+      font-size: 2.5em;
+      float: left;
+      width: 500px;
+      margin-right: 0;
+      line-height: 1.2em;
+    }
+    
+    .wp-post-image {
+      float: left;
+      width: 370px;
+      margin: 0 48px 0 0;
+    }
+    .entry {
+      color: #969696;
+      float: left;
+      width: 500px;
+    }
+    p {
+      width: auto;
+      float: none;
+      margin-top: 16px;
+    }
+    .post-meta {
+      color: #A3A3A3;
+      font-size: 1.4em;
+      margin-top: 10px;
+      float: left;
+      a {
+        color: #A6C4CC;
+      }
+    }
+  }
+
+  article {
+    float: left;
+    margin: 20px 0 0 0;
+    border-top: 1px solid #c5c5c5;
+    width: 920px;
+    padding: 20px 0 0 0;
+    h2 {
+      float: left;
+      width: 370px;
+      margin-right: 48px;
+      font-size: 1.6em;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.2em;
+      width: 480px;
+      float: left;
+    }
+  }
 }
 
 
 #footer {
   background: #000;
   bottom: 0;
-  height: 300px;
+  height: auto;
+}
+
+.footer-content {
+  width: 940px;
+  margin: 0 auto;
+  padding: 20px 0 40px;
+  @include clearfix;
+}
+
+.footer-twitter,
+.footer-social,
+.footer-nav {
+  width: 300px;
+  float: left;
+  margin-left: 10px;
+  h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-social {
+  li a {
+    color: #5092AE;
+    line-height: 1.6em;
+  }
+}
+
+.footer-nav {  
+  li a {
+    color: #B3B3B3;
+    line-height: 1.4em;
+    font-size: 1.6em;
+  }
 }
 
 // ---------------------------------------------------------
@@ -173,6 +274,13 @@ a {
     width: 560px;
   }
 }
+
+
+// ---------------------------------------------------------
+// HOMEPAGE
+// ---------------------------------------------------------
+
+
 
 // ---------------------------------------------------------
 // HELPERS

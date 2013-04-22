@@ -1,35 +1,46 @@
     <footer id="footer" class="source-org vcard copyright">
-      <small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
+      <div class="footer-content">
+        <div class="footer-twitter">
+          <h3><a href="http://twitter.com/safecast">@Safecast</a></h3>
+        </div>
+        
+        <div class="footer-social">
+          <h3><a href="#">Safecast Mailing List</a></h3>
+          <ul>
+            <li><a href="#">Safecast Discussion mailing list</a></li>
+            <li><a href="#">Safecast on Facebook</a></li>
+            <li><a href="#">Safecast on Facebook</a></li>
+            <li><a href="#">Safecast on Flickr</a></li>
+            <li><a href="#">Safecast on Google+</a></li>
+            <li><a href="#">Safecast on Slideshare</a></li>
+            <li><a href="#">Safecast on Twitter</a></li>
+            <li><a href="#">Safecast on Twitter</a></li>
+            <li><a href="#">Safecast Videos on Vimeo</a></li>
+            <li><a href="#">Safecast ML</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-nav">
+          <h3><a href="http://twitter.com/safecast">Links</a></h3>
+          <ul>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About Safecast</a></li>
+            <li><a href="">Data</a></li>
+            <li><a href="">Maps</a></li>
+            <li><a href="">Devices</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
 
   <?php wp_footer(); ?>
 
 
-  <!-- here comes the javascript -->
-
-  <!-- jQuery is called via the Wordpress-friendly way via functions.php -->
-
-  <!-- this is where we put our custom functions -->
   <script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
 
-  <!-- Asynchronous google analytics; this is the official snippet.
-     Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
-     
-  <script>
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-XXXXXX-XX']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-  -->
   </div>
 </body>
 
