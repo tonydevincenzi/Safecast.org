@@ -123,11 +123,34 @@ a {
   width: 940px;
 }
 
-.slide-item {
+
+#footer {
+  background: #000;
+  bottom: 0;
+  height: 300px;
+}
+
+// ---------------------------------------------------------
+// SLIDER
+// ---------------------------------------------------------
+
+
+.list_carousel.responsive {
+  width: auto;
+  margin-left: 0;
+}
+
+.list_carousel ul {
+  @include clearfix;
+}
+
+.list_carousel li {
   background: #fff;
   height: 220px;
   margin: 40px auto;
   width: 940px;
+  display: block;
+  float: left;
   @include box-shadow(0 1px 5px -1px rgba(0,0,0,0.25));
   .slide-item-text {
     float: left;
@@ -149,13 +172,6 @@ a {
     height: 100%;
     width: 560px;
   }
-}
-
-
-#footer {
-  background: #000;
-  bottom: 0;
-  height: 300px;
 }
 
 // ---------------------------------------------------------
